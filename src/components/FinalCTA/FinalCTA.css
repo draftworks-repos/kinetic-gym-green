@@ -1,0 +1,114 @@
+.kinetic-final-cta {
+  background: linear-gradient(180deg, #0b0b0b 0%, #141414 100%);
+  padding: 7rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.kinetic-final-cta-container {
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.kinetic-final-cta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-electric-lime);
+  margin-bottom: 1.25rem;
+}
+
+.kinetic-final-cta-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.75rem, 6vw, 5.5rem);
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+}
+
+.kinetic-final-cta-desc {
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 1.3vw, 1.2rem);
+  color: var(--color-cool-gray);
+  max-width: 640px;
+  margin: 0 auto 2.5rem auto;
+  line-height: 1.6;
+}
+
+.kinetic-final-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.kinetic-final-btn-lime {
+  background-color: var(--color-electric-lime);
+  color: #0b0b0b;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 1rem 2.25rem;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: 0 4px 25px rgba(198, 255, 0, 0.35);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.kinetic-final-btn-lime:hover {
+  background-color: #d4ff26;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 35px rgba(198, 255, 0, 0.5);
+}
+
+.kinetic-final-btn-phone {
+  background-color: #171717;
+  color: #ffffff;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: all 0.2s ease;
+}
+
+.kinetic-final-btn-phone:hover {
+  background-color: #262626;
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.kinetic-final-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 0.85rem;
+  color: var(--color-cool-gray);
+}

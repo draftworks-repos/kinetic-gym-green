@@ -1,0 +1,116 @@
+.kinetic-contact-section {
+  background-color: var(--bg-deep-black);
+  padding: 5rem 1.5rem;
+}
+
+.kinetic-contact-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .kinetic-contact-container {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+}
+
+.kinetic-contact-card-box {
+  background: #171717;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 2.5rem;
+}
+
+.kinetic-contact-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.kinetic-contact-cta-whatsapp {
+  background-color: var(--color-electric-lime);
+  color: #0b0b0b;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1.15rem 1.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px rgba(198, 255, 0, 0.3);
+  transition: all 0.2s ease;
+}
+
+.kinetic-contact-cta-whatsapp:hover {
+  background-color: #d4ff26;
+  transform: translateY(-2px);
+}
+
+.kinetic-contact-cta-phone {
+  background-color: #0b0b0b;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 1.15rem 1.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.kinetic-contact-cta-phone:hover {
+  border-color: var(--color-electric-lime);
+  color: var(--color-electric-lime);
+  transform: translateY(-2px);
+}
+
+.kinetic-contact-detail-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.kinetic-contact-detail-row:last-child {
+  margin-bottom: 0;
+}
+
+.kinetic-contact-map-box {
+  background: #171717;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 540px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.kinetic-contact-map-iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 540px;
+  border: 0;
+  display: block;
+  flex: 1;
+}
+
+@media (max-width: 1023px) {
+  .kinetic-contact-map-box,
+  .kinetic-contact-map-iframe {
+    min-height: 380px;
+  }
+}

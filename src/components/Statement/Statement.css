@@ -1,0 +1,176 @@
+.kinetic-statement {
+  background-color: var(--bg-deep-black);
+  padding: 6rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.kinetic-statement-container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.kinetic-statement-header {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .kinetic-statement-header {
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: flex-end;
+  }
+}
+
+.kinetic-statement-eyebrow {
+  color: var(--color-electric-lime);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.kinetic-statement-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 5vw, 4.25rem);
+  font-weight: 800;
+  line-height: 0.95;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.kinetic-statement-desc {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-cool-gray);
+}
+
+/* Image Showcase Grid */
+.kinetic-statement-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 640px) {
+  .kinetic-statement-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .kinetic-statement-grid {
+    grid-template-columns: 1.2fr 0.9fr 0.9fr;
+  }
+}
+
+.kinetic-statement-card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #171717;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  aspect-ratio: 4 / 5;
+  transition:
+    transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.2s ease;
+}
+
+.kinetic-statement-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(198, 255, 0, 0.4);
+}
+
+.kinetic-statement-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.kinetic-statement-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(11, 11, 11, 0.9) 0%,
+    rgba(11, 11, 11, 0.2) 50%,
+    transparent 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+}
+
+.kinetic-statement-card-tag {
+  color: var(--color-electric-lime);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+
+.kinetic-statement-card-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+/* Four Pillars Grid */
+.kinetic-pillars {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 3rem;
+}
+
+@media (min-width: 640px) {
+  .kinetic-pillars {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .kinetic-pillars {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.kinetic-pillar-item {
+  padding: 1rem 0;
+}
+
+.kinetic-pillar-num {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-electric-lime);
+  margin-bottom: 0.5rem;
+}
+
+.kinetic-pillar-title {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.kinetic-pillar-desc {
+  font-size: 0.85rem;
+  color: var(--color-cool-gray);
+  line-height: 1.5;
+}

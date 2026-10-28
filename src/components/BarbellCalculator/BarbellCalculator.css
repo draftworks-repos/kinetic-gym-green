@@ -1,0 +1,226 @@
+.kinetic-calculator {
+  background-color: #171717;
+  padding: 5rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.kinetic-calc-container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.kinetic-calc-card {
+  background: #0b0b0b;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .kinetic-calc-card {
+    grid-template-columns: 1fr 1.2fr;
+    align-items: center;
+  }
+}
+
+.kinetic-calc-eyebrow {
+  color: var(--color-electric-lime);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.kinetic-calc-title {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1.05;
+  margin-bottom: 0.75rem;
+}
+
+.kinetic-calc-desc {
+  font-size: 0.88rem;
+  color: var(--color-cool-gray);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.kinetic-preset-weights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.kinetic-preset-btn {
+  background: #171717;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.kinetic-preset-btn:hover {
+  border-color: var(--color-electric-lime);
+  color: var(--color-electric-lime);
+}
+
+.kinetic-preset-btn.active {
+  background: var(--color-electric-lime);
+  color: #0b0b0b;
+  border-color: var(--color-electric-lime);
+}
+
+.kinetic-input-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.kinetic-weight-input {
+  background: #171717;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  width: 140px;
+  text-align: center;
+}
+
+.kinetic-weight-input:focus {
+  outline: none;
+  border-color: var(--color-electric-lime);
+  box-shadow: 0 0 15px rgba(198, 255, 0, 0.2);
+}
+
+/* Visual Barbell Display */
+.kinetic-barbell-visual {
+  background: #171717;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kinetic-barbell-sleeve {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.kinetic-bar-shaft {
+  position: absolute;
+  width: 90%;
+  height: 12px;
+  background: linear-gradient(180deg, #888, #444);
+  border-radius: 2px;
+}
+
+.kinetic-bar-collar {
+  position: absolute;
+  width: 24px;
+  height: 48px;
+  background: #2a2a2a;
+  border: 1px solid #555;
+  border-radius: 3px;
+  left: 20%;
+}
+
+.kinetic-plates-display {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  z-index: 2;
+  margin-left: -50px;
+}
+
+.plate-disc {
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 100;
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.plate-disc-25 {
+  width: 20px;
+  height: 80px;
+  background: #b91c1c;
+}
+.plate-disc-20 {
+  width: 18px;
+  height: 74px;
+  background: #1d4ed8;
+}
+.plate-disc-15 {
+  width: 16px;
+  height: 64px;
+  background: #ca8a04;
+}
+.plate-disc-10 {
+  width: 14px;
+  height: 54px;
+  background: #15803d;
+}
+.plate-disc-5 {
+  width: 12px;
+  height: 42px;
+  background: #475569;
+}
+.plate-disc-small {
+  width: 10px;
+  height: 32px;
+  background: #334155;
+}
+
+.kinetic-calc-stats {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1rem;
+}
+
+.kinetic-calc-stat-item {
+  text-align: center;
+}
+
+.kinetic-calc-stat-val {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: var(--color-electric-lime);
+}
+
+.kinetic-calc-stat-lbl {
+  font-size: 0.7rem;
+  color: var(--color-cool-gray);
+  text-transform: uppercase;
+}

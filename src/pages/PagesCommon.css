@@ -1,0 +1,27 @@
+.kinetic-page-header {
+  background-color: var(--bg-deep-black);
+  padding: 5rem 1.5rem 3rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.kinetic-page-header-container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.kinetic-page-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 0.95;
+  margin-bottom: 1rem;
+}
+
+.kinetic-page-desc {
+  font-size: 1.05rem;
+  color: var(--color-cool-gray);
+  max-width: 620px;
+  line-height: 1.6;
+}

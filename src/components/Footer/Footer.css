@@ -1,0 +1,116 @@
+.kinetic-footer {
+  background-color: #080808;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 5rem 1.5rem 2rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.kinetic-footer-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.kinetic-footer-top {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .kinetic-footer-top {
+    grid-template-columns: 1.5fr 1fr 1fr;
+  }
+}
+
+.kinetic-footer-tagline {
+  color: var(--color-cool-gray);
+  font-size: 0.9rem;
+  max-width: 320px;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.kinetic-footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  transition: color 0.15s ease;
+}
+
+.kinetic-footer-contact-item:hover {
+  color: var(--color-electric-lime);
+}
+
+.kinetic-footer-col-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.25rem;
+}
+
+.kinetic-footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.kinetic-footer-link {
+  color: var(--color-cool-gray);
+  text-decoration: none;
+  font-size: 0.88rem;
+  transition: color 0.15s ease;
+}
+
+.kinetic-footer-link:hover {
+  color: #ffffff;
+}
+
+.kinetic-footer-watermark {
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 30vw, 30rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  background: linear-gradient(0deg, #e9ff7a, #c8ff00 55%, #8fd400);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  line-height: 0.8;
+  user-select: none;
+  pointer-events: none;
+  margin: 2rem 0;
+  opacity: 0.9;
+}
+
+.kinetic-footer-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 2rem;
+  font-size: 0.8rem;
+  color: var(--color-cool-gray);
+}
+
+@media (min-width: 640px) {
+  .kinetic-footer-bottom {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 220" width="1020" height="220" fill="none">
+  <defs>
+    <style>
+      .kinetic-text {
+        font-family: 'Barlow Condensed', 'Arial Black', 'Impact', sans-serif;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 145px;
+        fill: #C6FF00;
+        stroke: #FFFFFF;
+        stroke-width: 3.5px;
+        letter-spacing: 0.03em;
+        paint-order: stroke fill;
+      }
+    </style>
+  </defs>
+
+  <!-- Left: Weights & Squatting Athlete Graphic -->
+  <g fill="#C6FF00" fill-rule="evenodd">
+    <!-- Ground Baseline -->
+    <rect x="5" y="196" width="340" height="4.5" rx="2" />
+
+    <!-- Left Kettlebell 1 (Front Left) -->
+    <path d="M 44 130 C 32 130 28 148 28 156 C 16 160 10 173 10 186 C 10 194 18 197 44 197 C 70 197 78 194 78 186 C 78 173 72 160 60 156 C 60 148 56 130 44 130 Z M 44 138 C 49 138 52 147 52 154 C 47 154 41 154 36 154 C 36 147 39 138 44 138 Z" />
+
+    <!-- Left Kettlebell 2 (Behind) -->
+    <path d="M 82 120 C 72 120 68 138 68 145 C 58 148 54 160 54 173 C 54 186 62 197 82 197 C 102 197 110 186 110 173 C 110 160 106 148 96 145 C 96 138 92 120 82 120 Z M 82 127 C 86 127 89 135 89 142 C 85 142 79 142 75 142 C 75 135 78 127 82 127 Z" />
+
+    <!-- Barbell Bar -->
+    <rect x="65" y="46" width="265" height="8" rx="2.5" />
+
+    <!-- Left Barbell Plates & Hub -->
+    <path d="M 106 14 C 94 14 78 28 78 50 C 78 72 94 86 106 86 C 118 86 134 72 134 50 C 134 28 118 14 106 14 Z M 106 22 C 114 22 126 34 126 50 C 126 66 114 78 106 78 C 98 78 86 66 86 50 C 86 34 98 22 106 22 Z" />
+    <ellipse cx="106" cy="50" rx="15" ry="24" />
+    <rect x="68" y="43" width="14" height="14" rx="2" />
+
+    <!-- Right Barbell Plates & Hub -->
+    <path d="M 288 14 C 276 14 260 28 260 50 C 260 72 276 86 288 86 C 300 86 316 72 316 50 C 316 28 300 14 288 14 Z M 288 22 C 296 22 308 34 308 50 C 308 66 296 78 288 78 C 280 78 268 66 268 50 C 268 34 280 22 288 22 Z" />
+    <ellipse cx="288" cy="50" rx="15" ry="24" />
+    <rect x="314" y="43" width="14" height="14" rx="2" />
+
+    <!-- Athlete Silhouette in Barbell Back Squat -->
+    <!-- Head -->
+    <ellipse cx="218" cy="28" rx="14" ry="18" />
+    <!-- Neck & Traps -->
+    <path d="M 207 43 C 207 38 229 38 229 43 L 235 52 C 235 52 201 52 207 43 Z" />
+    <!-- Left Arm -->
+    <path d="M 207 50 C 187 50 170 54 164 56 C 158 59 156 70 162 82 C 168 94 180 102 184 98 C 188 94 185 76 195 64 C 200 58 207 54 207 50 Z" />
+    <!-- Right Arm -->
+    <path d="M 229 50 C 249 50 266 54 272 56 C 278 59 280 70 274 82 C 268 94 256 102 252 98 C 248 94 251 76 241 64 C 236 58 229 54 229 50 Z" />
+    <!-- Torso (angled into squat) -->
+    <path d="M 195 56 C 215 54 235 55 240 64 C 245 74 242 98 238 116 C 230 134 218 144 200 144 C 184 144 174 130 172 112 C 170 94 182 72 195 56 Z" />
+    <!-- Quads / Thighs -->
+    <path d="M 172 112 C 150 116 136 128 134 144 C 130 158 142 174 162 176 C 178 178 192 165 200 150 C 205 140 192 118 172 112 Z" />
+    <path d="M 226 116 C 248 118 262 132 260 150 C 258 164 246 176 228 176 C 214 176 204 162 204 148 C 204 134 212 120 226 116 Z" />
+    <!-- Left Calf & Foot -->
+    <path d="M 148 165 L 135 196 L 165 196 L 168 170 Z" />
+    <!-- Right Calf & Foot -->
+    <path d="M 244 165 L 238 196 L 268 196 L 262 170 Z" />
+
+    <!-- Dumbbell on Floor (Right) -->
+    <!-- Left Plate -->
+    <rect x="276" y="168" width="9" height="28" rx="2.5" />
+    <rect x="285" y="173" width="3" height="18" rx="1" />
+    <!-- Center Grip Handle -->
+    <rect x="288" y="179" width="24" height="6" rx="2" />
+    <rect x="312" y="173" width="3" height="18" rx="1" />
+    <!-- Right Plate -->
+    <rect x="315" y="168" width="9" height="28" rx="2.5" />
+  </g>
+
+  <!-- Right: Slanted Bold KINETIC Text with White Outline -->
+  <text x="405" y="165" class="kinetic-text">KINETIC</text>
+</svg>

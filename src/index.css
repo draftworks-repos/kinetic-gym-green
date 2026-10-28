@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand Color System */
+  --bg-deep-black: #0b0b0b;
+  --bg-charcoal: #171717;
+  --bg-charcoal-light: #202020;
+  --color-electric-lime: #c6ff00;
+  --color-electric-lime-glow: rgba(198, 255, 0, 0.25);
+  --color-pure-white: #ffffff;
+  --color-cool-gray: #a3a3a3;
+  --color-border-subtle: rgba(255, 255, 255, 0.1);
+  --color-border-lime: rgba(198, 255, 0, 0.35);
+
+  /* Typography */
+  --font-display: "Barlow Condensed", "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  /* Global Animation Play State controlled by Intersection Observer */
+  --kinetic-play-state: paused;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-deep-black);
+  color: var(--color-pure-white);
+  font-family: var(--font-body);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: var(--bg-deep-black);
+  color: var(--color-pure-white);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar for athletic sleek feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0b0b;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3a;
+}
+
+/* Kinetic Athletic Font Utility Classes */
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* Athletic Accent Glow & Border Utilities */
+.lime-border-hover {
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.lime-border-hover:hover {
+  border-color: var(--color-electric-lime);
+  box-shadow: 0 0 25px rgba(198, 255, 0, 0.15);
+}
+
+/* ==========================================================================
+   IMAGE COLOR GRADING & CORRECTION
+   Correcting reddish/magenta cast from gym tungsten/colored lighting while
+   preserving natural muscle definition, high dynamic range, and authentic grit.
+   ========================================================================== */
+
+.img-grade-hero {
+  filter: contrast(1.1) brightness(0.94) saturate(0.88) hue-rotate(-5deg);
+  mix-blend-mode: normal;
+}
+
+.img-grade-squat {
+  filter: contrast(1.12) brightness(0.95) saturate(0.84) hue-rotate(-6deg);
+}
+
+.img-grade-sled {
+  filter: contrast(1.08) brightness(0.98) saturate(0.86) hue-rotate(-4deg);
+}
+
+.img-grade-tire {
+  filter: contrast(1.12) brightness(0.95) saturate(0.85) hue-rotate(-5deg);
+}
+
+.img-grade-row {
+  filter: contrast(1.08) brightness(0.98) saturate(0.86) hue-rotate(-4deg);
+}
+
+.img-grade-yoga {
+  filter: contrast(1.06) brightness(1) saturate(0.9) hue-rotate(-3deg);
+}
+
+.img-grade-squad {
+  filter: contrast(1.1) brightness(0.96) saturate(0.86) hue-rotate(-5deg);
+}
+
+.img-grade-cages {
+  filter: contrast(1.14) brightness(0.93) saturate(0.8) hue-rotate(-8deg);
+}
+
+.img-grade-dumbbells {
+  filter: contrast(1.1) brightness(0.96) saturate(0.84) hue-rotate(-6deg);
+}
+
+.img-grade-plates {
+  filter: contrast(1.12) brightness(0.94) saturate(0.82) hue-rotate(-7deg);
+}
+
+.img-grade-trainer-marcus {
+  filter: contrast(1.08) brightness(0.98) saturate(0.9) hue-rotate(-4deg);
+}
+
+.img-grade-trainer-devon {
+  filter: contrast(1.06) brightness(1) saturate(0.92) hue-rotate(-3deg);
+}
+
+.img-grade-trainer-kane {
+  filter: contrast(1.1) brightness(0.97) saturate(0.86) hue-rotate(-5deg);
+}
+
+.img-grade-chalk {
+  filter: contrast(1.14) brightness(0.94) saturate(0.82) hue-rotate(-6deg);
+}
+
+/* ==========================================================================
+   INTERSECTION OBSERVER PAUSE/UNPAUSE CSS ANIMATIONS
+   When out of viewport, CSS animations pause to conserve CPU & battery.
+   ========================================================================== */
+
+.kinetic-auto-anim,
+[data-anim-pause="true"] {
+  animation-play-state: var(--kinetic-play-state, paused);
+}
+
+.kinetic-auto-anim.is-in-viewport,
+[data-anim-pause="true"].is-in-viewport {
+  animation-play-state: running !important;
+}
+
+/* Respect user's reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-delay: 0s !important;
+    transition-duration: 0s !important;
+  }
+}

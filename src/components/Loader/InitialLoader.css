@@ -1,0 +1,65 @@
+/* Full-screen initial website loader overlay */
+.initial-loader-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0b0b0b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0.5s ease;
+  user-select: none;
+  overflow: hidden;
+}
+
+.initial-loader-overlay.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Dumbbell container strictly centered with no extraneous text or elements */
+.initial-loader-dumbbell {
+  width: clamp(160px, 22vw, 240px);
+  height: clamp(160px, 22vw, 240px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  will-change: transform, opacity;
+  animation: loaderContainerPulse 2.169s ease-in-out infinite;
+}
+
+/* Pause animation when not in viewport (enforced by IntersectionObserver) */
+.initial-loader-dumbbell.paused {
+  animation-play-state: paused !important;
+}
+
+.initial-loader-dumbbell.running {
+  animation-play-state: running;
+}
+
+.initial-loader-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+@keyframes loaderContainerPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 12px rgba(173, 240, 0, 0.25));
+  }
+  50% {
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 24px rgba(173, 240, 0, 0.45));
+  }
+}

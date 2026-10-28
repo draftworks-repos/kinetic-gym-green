@@ -1,0 +1,6 @@
+{
+  "name": "KINETIC Gym & Athletic Performance",
+  "description": "High-energy, premium gym showcase and lead-generation experience featuring world-class strength training, conditioning, expert coaching, and athletic facilities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

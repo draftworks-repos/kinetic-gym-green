@@ -1,0 +1,11 @@
+.kinetic-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-deep-black);
+  color: var(--color-pure-white);
+}
+
+.kinetic-main-content {
+  flex-grow: 1;
+}
